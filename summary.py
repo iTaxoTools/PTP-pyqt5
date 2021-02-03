@@ -356,7 +356,7 @@ class partitionparser:
         self.meansupport = numpy.mean(bestsupport)
         spes, support = self._partition2names(tpartitions[bestpar], bestsupport)
         spe_setting = sp_setting[bestpar]
-        directory, file= os.path.split(self.fileextension)
+        if self.fileextension: directory, file= os.path.split(self.fileextension)
 
 
         fo_bestpar = open(fo, "w")
@@ -434,7 +434,7 @@ class partitionparser:
 
         spes, support = self._partition2names(bestpar, bestsupport)
 
-        directory, file= os.path.split(self.fileextension)
+        if self.fileextension: directory, file= os.path.split(self.fileextension)
 
 
         fo_bestpar = open(fo, "w")
@@ -561,7 +561,7 @@ class partitionparser:
 
         self.meansupport = numpy.mean(bestsupport)
         spes, support = self._partition2names(bestpar, bestsupport)
-        directory, file= os.path.split(self.fileextension)
+        if self.fileextension: directory, file= os.path.split(self.fileextension)
 
         fo_bestpar = open(fo, "w")
         fo_bestpar.write("begin spart;\n\n")

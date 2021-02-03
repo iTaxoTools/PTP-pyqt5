@@ -1,0 +1,13 @@
+# Most supported partition found by simple heuristic search
+Species 1 (support = 0.956)
+     C
+
+Species 2 (support = 0.813)
+     d1,d2
+
+Species 3 (support = 0.846)
+     e1,e2
+
+Species 4 (support = 0.736)
+     f1,f2
+

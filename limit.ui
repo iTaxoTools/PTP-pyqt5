@@ -14,7 +14,7 @@
    <string>PTP species delimitation</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../photo.qrc">
+   <iconset>
     <normaloff>:/icons/PTP_icon_transparent.png</normaloff>:/icons/PTP_icon_transparent.png</iconset>
   </property>
   <property name="autoFillBackground">
@@ -104,7 +104,7 @@ border-bottom-color: rgb(96, 96, 200);</string>
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>../icons/copy_21mm.png</pixmap>
+             <pixmap>icons/copy_21mm.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -298,23 +298,6 @@ background-color: rgb(243, 243, 121);</string>
                 <property name="text">
                  <string>View result image and 
 partitions</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_7">
-                <property name="font">
-                 <font>
-                  <pointsize>10</pointsize>
-                  <italic>false</italic>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgb(255, 255, 127);</string>
-                </property>
-                <property name="text">
-                 <string>Add comment to 
-spart file</string>
                 </property>
                </widget>
               </item>

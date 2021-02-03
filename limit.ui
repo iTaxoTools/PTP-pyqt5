@@ -13,10 +13,6 @@
   <property name="windowTitle">
    <string>PTP species delimitation</string>
   </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>:/icons/PTP_icon_transparent.png</normaloff>:/icons/PTP_icon_transparent.png</iconset>
-  </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
@@ -331,8 +327,8 @@ partitions</string>
   </widget>
  </widget>
  <resources>
-  <include location="../photo.qrc"/>
-  <include location="../photo.qrc"/>
+  <include location="photo.qrc"/>
+  <include location="photo.qrc"/>
  </resources>
  <connections/>
 </ui>

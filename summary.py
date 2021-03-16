@@ -357,6 +357,7 @@ class partitionparser:
         spes, support = self._partition2names(tpartitions[bestpar], bestsupport)
         spe_setting = sp_setting[bestpar]
         if self.fileextension: directory, file= os.path.split(self.fileextension)
+        file= re.sub(r'[^A-Za-z0-9_]', '_', file)
 
 
         fo_bestpar = open(fo, "w")
@@ -399,7 +400,7 @@ class partitionparser:
                     xx= kk +":" + str(i+1).strip()
                     ll.append(xx)
 
-        fo_bestpar.writelines([x+"\n" for x in ll[0:-2]])
+        fo_bestpar.writelines([x+"\n" for x in ll[0:-1]])
         fo_bestpar.write(f"{ll[-1]};\n\n")
 
         if self.ptp_status:
@@ -435,6 +436,7 @@ class partitionparser:
         spes, support = self._partition2names(bestpar, bestsupport)
 
         if self.fileextension: directory, file= os.path.split(self.fileextension)
+        file= re.sub(r'[^A-Za-z0-9_]', '_', file)
 
 
         fo_bestpar = open(fo, "w")
@@ -477,7 +479,7 @@ class partitionparser:
                     xx= kk +":" + str(i+1).strip()
                     ll.append(xx)
 
-        fo_bestpar.writelines([x+"\n" for x in ll[0:-2]])
+        fo_bestpar.writelines([x+"\n" for x in ll[0:-1]])
         fo_bestpar.write(f"{ll[-1]};\n\n")
 
         if self.ptp_status:
@@ -562,6 +564,7 @@ class partitionparser:
         self.meansupport = numpy.mean(bestsupport)
         spes, support = self._partition2names(bestpar, bestsupport)
         if self.fileextension: directory, file= os.path.split(self.fileextension)
+        file= re.sub(r'[^A-Za-z0-9_]', '_', file)
 
         fo_bestpar = open(fo, "w")
         fo_bestpar.write("begin spart;\n\n")
@@ -603,7 +606,7 @@ class partitionparser:
                     xx= kk +":" + str(i+1).strip()
                     ll.append(xx)
 
-        fo_bestpar.writelines([x+"\n" for x in ll[0:-2]])
+        fo_bestpar.writelines([x+"\n" for x in ll[0:-1]])
         fo_bestpar.write(f"{ll[-1]};\n\n")
 
         if self.ptp_status:

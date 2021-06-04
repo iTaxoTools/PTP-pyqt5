@@ -1,0 +1,8 @@
+seqid	sequence
+Begin_data	;
+Dimensions	 ntax=4 nchar=2;
+Format_dat	atype=standard symbols="01" gap=-;
+Harry	         00
+Simon	         01
+Betty	         10
+Louise	         11

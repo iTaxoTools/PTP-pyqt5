@@ -28,6 +28,6 @@ To open it as the original commandline tool, and use file example/um_mftree.tre 
 * To use it as GUI tool.
 
 ```
-python PTP_gui.py
+python advanced_ptp.py
 
 ```
